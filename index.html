@@ -1,48 +1,81 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
 </head>
 
 <body>
     
-    <!--- Header --->
+    <!-- Header Start -->
     
     <header>
         
+        <h1>Tic Tac Toe</h1>
+        
     </header>
     
-    <!--- Main Game ---> 
-        
+    <!-- Header End -->
+    
+    <!-- Home Start -->
+    
     <main>
         
-        <div class="game">
+        <div class="tagline">
+            <p>Unleash strategic brilliance with our Tic Tac Toe app! Engage in thrilling matches against friends, experiencing the classic game reimagined with sleek graphics and intuitive controls. Whether you're a casual player or a seasoned strategist, victory is just a move away.<br> <br> <br> Redefine your gaming strategy!!</p>
+        
+        </div>
+        
+        <div class="nav">
             
-            <button class="box">1</button>
-            <button class="box">2</button>
-            <button class="box">3</button>
-            <button class="box">4</button>
-            <button class="box">5</button>
-            <button class="box">6</button>
-            <button class="box">7</button>
-            <button class="box">8</button>
-            <button class="box">9</button>
+            <button onclick="redirectToPlay()">Play</button>
+            <button onclick="redirectToRules()">Rules</button>
+            <button onclick="redirectToDisclaimer()">Disclaimer</button>
             
         </div>
         
     </main>
     
-    <!--Footer-->
+    <!-- Home End -->
+    
+    <!-- Footer Start -->
     
     <footer>
         
+        <section class="footer">
+            <div class="footline"> Made with "<i class="bi bi-heart-fill"></i>" by <a href="https://linktr.ee/linkxnishant" style="color: black" ><b><u>NISHANT</u></b></a> </div>
+            <div class="footicons">
+                <span>
+                    <a href="mailto:mailxnishant@gmail.com"><i class="bi bi-envelope-at" id="mail"></i></a>
+                </span>
+                <span>
+                    <a href="https://github.com/githubxnishant" class="icon"><i class="bi bi-github"></i></a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/in/linkxnishant"><i class="bi bi-linkedin icon"></i></a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/igxnishant"><i class="bi bi-instagram icon"></i></a>
+                </span>
+                <span>
+                    <a href="https://twitter.com/tweetxnishant"><i class="bi bi-twitter-x icon"></i></a>
+                </span>
+            </div>
+        </section>
+        
     </footer>
     
+    <!-- Footer End -->
+    
+    <!-- Script Start -->
+    
     <script src="app.js"></script>
+    
+    <!-- Script End -->
     
 </body>
 
