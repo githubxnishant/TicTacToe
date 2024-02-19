@@ -1,6 +1,4 @@
-// JS code here
-
- function redirectToPlay() {
+function redirectToPlay() {
     window.location.href = "play.html";
 };
 
