@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --iwhite: #eaeef0;
+    --blue: #868fa3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-stroke: 0.5px black;
+}
+
+body{
+    background-color: var(--iwhite);
+}
+
+
+/* Header  */
+
+
+header{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    outline: 1px solid black;
+}
+
+
+/* Game Area */
+
+
+main{
+    width: 100vw;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+}
+
+.game{
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    flex-direction: column;
+}
+
+#player1, #player2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #eaeef0;
+    line-height: 1.5;
+    color: var(--blue);
+}
+
+#player2{
+    grid-column: 3/4;
+}
+
+.playerLogo{
+    height: 15vmax;
+    width: 15vmax;
+    border-radius: 50%;
+    background-color: var(--blue);
+    outline: 1px solid black;
+    margin: 2vh;
+}
+
+.playerinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 4vmin;
+}
+
+.box{
+    width: 15vmin;
+    height: 15vmin;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px black;
+}
+
+#box1, #box2, #box3 {
+    border-top: none;
+}
+
+#box1, #box4, #box7 {
+    border-left: none;
+}
+
+#box3, #box6, #box9 {
+    border-right: none;
+}
+
+#box7, #box8, #box9 {
+    border-bottom: none;
+}
+
+#homeBtn {
+    width: 10vw;
+    height: 5vh;
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    background-color: white;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+}
+
+#restartBtn{
+    width: 10vw;
+    height: 5vh;
+    position: absolute;
+    top: 18%;
+    right: 2%;
+    background-color: white;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+}
+
+/* Footer */
+
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    outline: 1px solid black;
+}
+
+.footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--blue);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footline{
+    font-size: 3vmin;
+    color: black;
+    padding-top: 4vmin;
+}
+
+.footicons{
+    margin: auto 10px;
+} 
+
+.footicons > span{
+    margin: 20px 0px;
+    padding: 5px;
+    resize: 50px;
+}
+
+.icon{
+    text-decoration: none;
+    color: black;
+}
+
+#mail{
+    text-decoration-color: none;
+    color: black;
+}
+
+
+/* Disclaimer */
+
+.disclaimer{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+#disclaimerHead, #rulesHead{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#disclaimerPara, #rulesPara{
+    text-align: center;
+    font-size: 13px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-right: 55vw;
+    width: 40vw;
+    height: 70%;
+    overflow: auto;
+    border: none;
+}
+
+#rulesPara {
+    text-align: center;
+    font-size: 13px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-right: 55vw;
+    width: 40vw;
+    height: 70%;
+    border: none;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    
+    /* Head */
+    
+    header{
+        align-items: center;
+        height: 13vh;
+    }
+    
+    
+    /* Play Area */
+    
+    
+    main {
+        height: 77vh !important;
+        grid-template-rows: 60% 40%;
+        grid-template-columns: 50% 50%;
+        height: 72vh;
+    }
+    
+    .game{
+        grid-row: 1/2;
+        grid-column: 1/3;
+        width: 100%;
+        margin-top: 5vh;
+    }
+    
+    #player1{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    #player2{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    
+    .box{
+        width: 10vh;
+        height: 10vh;
+        cursor: pointer;
+    }
+    
+    .playerLogo{
+        width: 13vh;
+        height: 13vh;
+    }
+    
+    #player1, #player2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       width: 100%;
+    }
+    
+    #homeBtn{
+        width: 20vw;
+        top: 15%;
+        left: 4%;
+    }
+    
+    #restartBtn{
+        top: 15%;
+        width: 20vw;
+        right: 4%;
+    }
+    
+    /* Footer */
+    
+    .footer{
+        height: 10vh;
+        margin-top: 2vh;
+        outline: 1px solid black;
+    }
+    
+    .footline{
+        font-size: 2vh;
+        padding-top: 2vh;
+    }
+    
+    .footicons > span{
+        font-size: 2.5vh; 
+    }    
+    
+    footer{
+        outline: none;
+        height: 10vh;
+    }
+    
+    /* Disclaimer */
+  
+    .disclaimer{
+        display: grid;
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
+    }
+    
+    #disclaimerHead, #rulesHead{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: -4vh;
+    }
+    
+    #rulesHead{
+        margin-bottom: -8vh;
+    }
+    
+    #disclaimerPara, #rulesPara{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        width: 100vw;
+        padding: 5vw 10vw 5vw;
+    }
+    
+}
