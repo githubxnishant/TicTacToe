@@ -16,9 +16,12 @@ function redirectToDisclaimer() {
 
 const boxes = document.querySelectorAll(".box");
 let turn = 0;
-/* let xInitial = document.querySelector("#xPoints");
-let oInitial = document.querySelector("#oPoints"); 
- */
+let count = 0;
+let xInitial = document.querySelector("#xPoints");
+let oInitial = document.querySelector("#oPoints");
+let xPoints = 0;
+let oPoints = 0; 
+
 
 const winPatterns = [
     [0, 1, 2], 
@@ -41,22 +44,38 @@ boxes.forEach(box => {
         }
         turn++;
         box.disabled = true;
-        checkWinner()
+        count++;
+        checkWinner();
+        
+        let isWinner = checkWinner();
+
+        if (count === 9 && !isWinner) {
+          gameDraw();
+        }
     });
 })
 
-let win = 1;
-
-
-const showWinner = (winner) => {
-    /* if (winner === x) {
-        xInitial.innerText += win;
-    }else{
-        oInitial.innerText += win;
-    }  */
-    alert(`${winner} is winner`);
-    window.location.href = "play.html" 
+const gameDraw = () => {
+    alert(`Game was a Draw.`);
+    resetGame();
 }
+
+let win = " I";
+
+const resetGame = () => {
+  turn = true;
+  count = 0;
+  enableBoxes();
+};
+
+const enableBoxes = () => {
+  for (let box of boxes) {
+    box.disabled = false;
+    box.innerText = "";
+  }
+};
+
+
 
 const checkWinner = () => {
   for (let pattern of winPatterns) {
@@ -72,3 +91,22 @@ const checkWinner = () => {
     }
   }
 };
+
+const showWinner = (winner) => { 
+    if (winner === "X") { 
+        xPoints++;
+        xInitial.innerText = `${xPoints}`;
+        if (xPoints === 3) {
+            alert(`${winner} is winner`);
+            window.location.href = "play.html" 
+        }
+    }else{
+        oPoints++
+        oInitial.innerText = `${oPoints}`;
+        if (oPoints === 3) {
+            alert(`${winner} is winner`);
+            window.location.href = "play.html" 
+        }
+    }
+    resetGame(); 
+}
