@@ -68,7 +68,7 @@ main > p{
 
 .nav button{
     width: 20vmax;
-    height: 7vmin;
+    height: 7vmax;
     border-radius: 5px;
     border: 1px solid var(--blue);
     background-color: white;
