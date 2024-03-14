@@ -219,6 +219,10 @@ footer{
     border: none;
 }
 
+#disclaimerPara{
+    margin-top: vw;
+}
+
 #rulesPara {
     text-align: center;
     font-size: 13px;
