@@ -58,6 +58,7 @@ main{
 
 #boxLine{
     width: 60%;
+    padding: 20%;
 }
 
 #player1, #player2{
