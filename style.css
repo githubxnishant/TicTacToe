@@ -56,6 +56,10 @@ main{
     gap: 1%;
 }
 
+#boxLine{
+    width: 60%;
+}
+
 #player1, #player2{
     display: flex;
     justify-content: center;
