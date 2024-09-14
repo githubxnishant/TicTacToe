@@ -12,7 +12,7 @@ This is the index page of the web game. It has the Intro of the game, access to 
 
 This is the play area of the game, which consists of the playground. It has two nav buttons at the top - Home (which redirect to the index section of the game) and Restart (which restarts the game - discards all the progress and set the game to initial stage). It has two players profile - Player X and Player O. If player X score, the points of X wil be increased by 1 otherwise points of Player O will be increased by 1. It also has a third condition, if none of the player score, the game will give a draw alert. After the draw alert, the game will again restart, without losing the points. It will save the points and again restarts the game. The player who score three points will ultimately win the game.
 
-![image](https://raw.githubusercontent.com/githubxnishant/TicTacToe/main/Screenshot%202024-09-14%20111255.png?token=GHSAT0AAAAAACXBXQZ6BCJCMVLIGUBLUBREZXFEWRQ)
+![image](https://raw.githubusercontent.com/githubxnishant/TicTacToe/main/Screenshot%202024-09-14%20111255.png?token=GHSAT0AAAAAACXBXQZ6PRCM6A6EMGF3H2O4ZXFE7IA)
 
 
 ## Rules
