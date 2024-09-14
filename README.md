@@ -19,7 +19,7 @@ This is the play area of the game, which consists of the playground. It has two 
 
 This section also contains the nav buttons at the top and consists of the rules that one should keep in mind before playing the game.
 
-![image](https://raw.githubusercontent.com/githubxnishant/TicTacToe/main/Screenshot%202024-09-14%20111209.png?token=GHSAT0AAAAAACXBXQZ7FYLLUTCGCMSHV7LWZXFEWJA)
+![image](https://raw.githubusercontent.com/githubxnishant/TicTacToe/main/Screenshot%202024-09-14%20111209.png?token=GHSAT0AAAAAACXBXQZ6PFAAPEOT6JP3VW4UZXFFBNQ)
 
 ## Disclaimer
 
