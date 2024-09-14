@@ -5,7 +5,7 @@ Presenting my Tic Tac Toe game—HTML for structure, CSS for aesthetics, and Jav
 
 This is the index page of the web game. It has the Intro of the game, access to the Play, Rules and Disclaimer section of the game.
 
-![image](https://raw.githubusercontent.com/githubxnishant/TicTacToe/main/Screenshot%202024-09-14%20111145.png?token=GHSAT0AAAAAACXBXQZ6QHMTURRMGYA7EC6UZXFEOXQ)
+![image](https://raw.githubusercontent.com/githubxnishant/TicTacToe/main/Screenshot%202024-09-14%20111145.png?token=GHSAT0AAAAAACXBXQZ6CGL6TYSJ7IJ3RUDUZXFFCRA)
 
 
 ##  Play Section
