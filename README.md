@@ -25,7 +25,7 @@ This section also contains the nav buttons at the top and consists of the rules 
 
 This section contains the disclaimer of the game. Though anyone can make Tic Tac Toe, this is not copied. I added my personal touch to it.
 
-![image](https://raw.githubusercontent.com/githubxnishant/TicTacToe/main/Screenshot%202024-09-14%20111238.png?token=GHSAT0AAAAAACXBXQZ7DJQVD5Z2YX4ADQ2GZXFEWNA)
+![image](https://raw.githubusercontent.com/githubxnishant/TicTacToe/main/Screenshot%202024-09-14%20111238.png?token=GHSAT0AAAAAACXBXQZ7D5Z35ATITOQJVKX2ZXFFANA)
 
 # Future Scope
 
